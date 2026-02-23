@@ -13,16 +13,17 @@
     "experimentalDecorators": true,
     "importHelpers": true,
     "target": "ES2022",
-    "module": "preserve",
+    "module": "es2022",
     "moduleResolution": "bundler",
     "baseUrl": "./",
     "paths": {
-      "@assets/*": ["src/public/*"],
+      "@assets/*": ["public/*"],
       "@env/*": ["src/environments/*"],
       "@feature/*": ["src/app/features/*"],
       "@core/*": ["src/app/core/*"],
       "@shared/*": ["src/app/shared/*"]
-    }
+    },
+    "allowJs": true
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
